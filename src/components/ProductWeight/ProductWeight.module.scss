@@ -1,0 +1,46 @@
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1698D9;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_hover {
+        background-color: #2EA8E6;
+    }
+
+    &_select {
+        background-color: #D91667;
+
+        &_hover {
+            background-color: #E52E7A;
+        }
+    }
+
+    &_empty {
+        background-color: #B3B3B3;
+    }
+}
+
+.num {
+    font-family: 'Exo';
+    font-size: 42px;
+    color: #ffffff;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-family: 'Exo';
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 22px;
+    font-weight: bold;
+}

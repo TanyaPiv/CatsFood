@@ -1,0 +1,113 @@
+.item {
+    max-width: 326px;
+    width: 100%;
+    min-height: 486px;
+    background-color: #1698D9;
+    border-radius: 10px;
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
+    position: relative;
+    padding-left: 51px;
+    padding-right: 51px;
+    padding-top: 21px;
+    cursor: pointer;
+
+    &_hover {
+        background-color: #2EA8E6;
+    }
+
+    &_select {
+        background-color: #D91667;
+
+        &_hover {
+            background-color: #E52E7A;
+        }
+    }
+
+    &_empty {
+        background-color: #B3B3B3;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        border-radius: 10px;
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        background-color: #ffffff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.off {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.img {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    border-radius: 10px;
+}
+
+.label {
+    color: #666666;
+    font-size: 16px;
+    font-family: 'Exo';
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Exo';
+    color: #000000;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Exo';
+    color: #000000;
+}
+
+
+.offer {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Exo';
+    line-height: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.link {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Exo';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+
+    a {
+        color: #1698D9;
+        font-size: 13px;
+        font-family: 'Exo';
+        font-weight: bold;
+        text-decoration: none;
+        border-bottom: 1px dashed #1698D9;
+    }
+}
